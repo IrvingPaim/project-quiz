@@ -64,7 +64,7 @@ body {
 .container .container-quiz h2 {
     text-align: center;
     text-decoration: underline;
-    margin: 1em 0;
+    margin: 1em 5px;
 }
 
 p {
