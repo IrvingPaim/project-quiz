@@ -23,18 +23,28 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: rgb(247 ,224 ,24);
+    overflow-x: hidden;
 }
 
 .container-questions {
+    display: flex;
     margin: 0 25%;
     width: 50vw;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .container .container-quiz {
+    position: relative;
     align-items: center;
+}
+
+.quiz-form {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25%;
 }
 
 .container .container-quiz h2 {
