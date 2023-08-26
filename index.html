@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  -->
   <link rel="stylesheet" href="style.css">
   <title>Quiz - Tríade do Front-End</title>
 </head>
@@ -13,33 +10,283 @@
   <!--Cabeçalho-->
   <header>
     <div class="header">
-      <h2>Quiz</h2>
+      <h2>Quiz - Tríade do Front-End - JavaScript</h2>
     </div>
   </header>
   
-  <div class="main">
-    <div class="container">
-      <h2 class="my-5 text-white">Você consegue acertar qual é o filme pelo título em português de Portugal?</h2>
-
-      <form class="quiz-form text-light">
-        <div class="my-5">
-          <p class="lead font-weight-normal">1. "O Mal Disposto" é o nome dado para o filme:</p>
-          <div class="form-check my-2 text-white-50">
+  <div class="container">
+    <div class="container-quiz">
+      <h2>Demonstre o quanto você aprendeu em JavaScript no CJRM Roger Melo!</h2>
+  
+      <form class="quiz-form">
+        <!--Container Question One-->
+        <div class="container-questions">
+          <p>1. No contexto da linguagem JavaScript, a função do método querySelector( ), é:</p>
+          <div class="container-options">
             <label class="form-check-label">
-              <input type="radio" name="inputQuestion1" value="A">
-              Psicose
+              <input type="radio" name="inputQuestion1" value="A" checked>
+              Alterar o estilo visual de um elemento HTML.
             </label>
           </div>
-          <div class="form-check my-2 text-white-50">
+          <div class="container-options">
             <label class="form-check-label">
-              <input type="radio" name="inputQuestion1" value="B" checked>
-              Meu Malvado Favorito
+              <input type="radio" name="inputQuestion1" value="B">
+              Manipular dados em um banco de dados relacional.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="C">
+              Executar uma requisição de rede de forma assíncrona.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="D">
+              Capturar um elemento HTML com base em um seletor CSS.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="E">
+              Capturar um elemento CSS com base em um seletor HTML.
+            </label>
+          </div>
+        </div>
+
+        <!--Container Question Two-->
+        <div class="container-questions">
+          <p>2. No contexto da linguagem JavaScript, analise as afirmativas sobre variáveis declaradas como const.</br>
+          </br>  
+            I. Devem ter seus valores atribuídos na declaração.</br>
+            II. Podem ter seus valores alterados depois de declaradas.</br>
+            III. Têm sempre escopo global.</br>
+          </br>         
+            Está correto o que se afirma em:</p>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="A" checked>
+              Somente II e III.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="B">
+              Somente I.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="C">
+              Somente II.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="D">
+              Somente III.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="E">
+              I, II e III.
+            </label>
+          </div>
+        </div>
+
+        <!--Container Question Three-->
+        <div class="container-questions">
+          <p>3. Assinale a alternativa que apresenta uma característica do desenvolvimento de interfaces web empregando HTML5, CSS e JavaScript.</p>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="A" checked>
+              O HTML5 permite a criação de elementos semânticos que melhoram a acessibilidade e a estruturação do conteúdo.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="B">
+              O CSS é utilizado apenas para definir a aparência visual dos elementos na página.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="C">
+              O JavaScript é uma linguagem de programação que não pode ser utilizada em conjunto com o HTML e o CSS.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="D">
+              O HTML5 e o CSS são tecnologias obsoletas que foram substituídas por frameworks de desenvolvimento web.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="E">
+              O desenvolvimento de interfaces web com HTML5, CSS e JavaScript é restrito a navegadores desktop e não é adequado para dispositivos móveis.
+            </label>
+          </div>
+        </div>
+
+        <!--Container Question Four-->
+        <div class="container-questions">
+          <p>4. Analise o seguinte trecho de código em Javascript:</br>
+          </br>  
+            let a = 10;</br>
+            let b = 5;</br>
+            let c = 2;</br>
+          </br>
+            let r1 = a + b - c;</br>
+            let r2 = a * b / c;</br>
+            let r3 = (a + b) * c;</br>
+            let r4 = Math.pow(a, c);</br>
+          </br>  
+            let rfinal = r1 * r2 + r3 + r4;</br>
+          </br>  
+            console.log(rfinal);</br>
+          </br>
+            Após a execução desse trecho, qual será o resultado da variável “rfinal”?</p>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="A" checked>
+              O HTML5 permite a criação de elementos semânticos que melhoram a acessibilidade e a estruturação do conteúdo.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="B">
+              O CSS é utilizado apenas para definir a aparência visual dos elementos na página.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="C">
+              O JavaScript é uma linguagem de programação que não pode ser utilizada em conjunto com o HTML e o CSS.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="D">
+              O HTML5 e o CSS são tecnologias obsoletas que foram substituídas por frameworks de desenvolvimento web.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="E">
+              O desenvolvimento de interfaces web com HTML5, CSS e JavaScript é restrito a navegadores desktop e não é adequado para dispositivos móveis.
+            </label>
+          </div>
+        </div>
+
+        <!--Container Question Five-->
+        <div class="container-questions">
+          <p>5. Tendo em vista a Linguagem de Programação Javascript, assinale a alternativa que descreve corretamente a diferença entre o uso de "==" e "===":</p>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="A" checked>
+              Ambos os operadores comparam igualdade de valores e tipos de dados.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="B">
+              O operador "==" compara apenas valores, enquanto o operador "===" compara valores e tipos de dados.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="C">
+              O operador "===" compara apenas valores, enquanto o operador "==" compara valores e tipos de dados.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="D">
+              O operador "==" é usado para comparações numéricas, enquanto o operador "===" é usado para comparações de strings.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="E">
+              Não há diferença entre os dois operadores em Javascript.
+            </label>
+          </div>
+        </div>
+
+        <!--Container Question Six-->
+        <div class="container-questions">
+          <p>6. JavaScript é uma linguagem de programação interpretada estruturada de script muito usada para programação FrontEnd. Selecione o método em JavaScript que remove de um vetor o primeiro elemento e o retorna como resultado:</p>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="A" checked>
+              push().
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="B">
+              shift().
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="C">
+              pop().
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="D">
+              join().
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="E">
+              reverse().
+            </label>
+          </div>
+        </div>
+
+        <!--Container Question Seven-->
+        <div class="container-questions">
+          <p>7. É sabido que Javascript é uma linguagem de tipagem dinâmica. Isso significa que:</p>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion7" value="A" checked>
+              É sempre necessário declarar os tipos de variável antes da sua atribuição.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion7" value="B">
+              Os outputs funcionam automaticamente.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion7" value="C">
+              As funções precisam ter um tipo na sua sintaxe de declaração.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion7" value="D">
+              Não é necessário declarar o tipo de variável antes de sua atribuição.
+            </label>
+          </div>
+          <div class="container-options">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion7" value="E">
+              Nunca se pode reatribuir a uma variável com um tipo diferente.
             </label>
           </div>
         </div>
         
-        <div class="text-center">
-          <button class="btn bg-primary text-light">Enviar</button>
+        <div class="container-button">
+          <button class="button-submit">Enviar</button>
         </div>
       </form>
     </div>
