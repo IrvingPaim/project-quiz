@@ -1,11 +1,88 @@
+/*------- RESET -------- */
+
+/*  
+
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ---------- Utility Components ----------*/
+
+:root {
+    font-size: 62,5%;
+
+    /* ---------- Custom Propeties -----------*/
+
+  /* First Color */
+  --first-color: #c2bb00;
+
+  /* Second Color */
+  --second-color: #ed8b16;
+
+  /* Third Color */
+  --third-color: #003547;
+
+  /* Fourth color */
+  --fourth-color: #005e54;
+
+  /* Fifth color */
+  --fifth-color: #e1523d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--first-color);
+    overflow-x: hidden;
+}
+
+/*------------------ Aside Nav -------------------*/
+
+aside#side-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+div.side-nav__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--fifth-color);
+}
+
+div.side-nav__content--logo img {
+    width: calc(3vw + 3vh);
+    object-fit: cover;
+}
+
+ul.side-nav__content--triade {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul.side-nav__content--triade a i {
+    font-size: calc(1rem + 0.66667vw);
+    color: white;
+    padding-bottom: calc(2rem + 0.66667vw);
+    transition: color 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 .container-score {
-    background-color: rgb(0, 0, 255);
+    background-color: var(--fourth-color);
 }
 
 .container-score p {
@@ -19,7 +96,7 @@
 }
 
 .header {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--third-color);
     padding: 3em;
 }
 
@@ -29,15 +106,6 @@
     font-weight: bold;
     font-size: 2.5em;
     text-align: center;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(247 ,224 ,24);
-    overflow-x: hidden;
 }
 
 .container-questions {

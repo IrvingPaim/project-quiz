@@ -1,5 +1,5 @@
 const form = document.querySelector('.quiz-form')
-const pScore = document.querySelector('.score')
+const finalScore = document.querySelector('.score')
 
 const correctAnswers = ['D', 'B', 'A', 'A', 'B', 'B', 'D', 'C', 'B', 'C']
 
@@ -27,7 +27,7 @@ form.addEventListener('submit', event => {
         }
     })
 
-    pScore.textContent = `Você acertou ${score}% do Quiz!`    
+    finalScore.querySelector('span').textContent = `${score}%`
     scrollTo(0, 0)
 
 })
