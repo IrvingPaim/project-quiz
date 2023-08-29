@@ -27,9 +27,24 @@ form.addEventListener('submit', event => {
         }
     })
 
-    finalScore.querySelector('span').textContent = `${score}%`
     scrollTo(0, 0)
 
+    finalScore.classList.remove('d-none')   
+
+    let counter = 0
+
+    const timer = setInterval(() => {
+        if (counter === score) {
+            clearInterval(timer)
+        }     
+
+        finalScore.querySelector('span').textContent = `${counter}%`
+        counter++
+    },10)
 })
+
+
+
+
 
 
