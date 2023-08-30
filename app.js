@@ -17,8 +17,8 @@ const getUserAnswers = () => {
 }
 
 const calculateuserScore = userAnswers => {
-    const isUserAnswerCorrect = userAnswer === correctAnswers[index]
     userAnswers.forEach((userAnswer, index) => {
+        const isUserAnswerCorrect = userAnswer === correctAnswers[index]
         if (isUserAnswerCorrect) {
             score += 10
         }

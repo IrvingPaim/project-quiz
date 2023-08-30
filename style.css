@@ -37,10 +37,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.8;
     display: flex;
-    /*flex-direction: column;
-    height: 100vh;
+    /*flex-direction: column;*/
+    /*height: 100vh;
     width: 100vw;*/
-    /*background-color: var(--first-color);*/
+    background-color: var(--first-color);
     /*overflow-x: hidden;*/
 }
 
@@ -177,6 +177,14 @@ ul.header__main-nav--links li a:active::after {
   transform: scaleX(1);
 }
 
+/*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* (max-width:1510px) Mark *-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-*/
+@media screen and (min-width: 1510px) {
+  body {
+    width: 1510px;
+    margin: 0 auto;
+  }
+}
+
 /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* (max-width:610px) Mark *-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-*/
 @media screen and (max-width: 610px) {
     /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* Main Nav Header *-*-*-*-**-*-*-*-**-*-*-*-**-*/
@@ -278,21 +286,20 @@ ul.header__main-nav--links li a:active::after {
     }
 }    
 
-/*
+
 .container-score {
-    background-color: var(--fourth-color);
+    display: flex;
+    justify-content: center;
+    background-color: var(--fifth-color);
 }
 
 .container-score p {
-    color: rgb(247 ,224 ,24);
+    color: var(--first-color);
     font-size: 2.5em;
     text-align: center;
 }
 
-.display-non {
-    display: none;
-}
-
+/*
 .header {
     background-color: var(--third-color);
     padding: 3em;
@@ -305,6 +312,7 @@ ul.header__main-nav--links li a:active::after {
     font-size: 2.5em;
     text-align: center;
 }
+*/
 
 .container-questions {
     display: flex;
@@ -315,13 +323,13 @@ ul.header__main-nav--links li a:active::after {
 }
 
 .container .container-quiz {
-    position: relative;
+    /*position: relative;*/
     align-items: center;
 }
 
 .quiz-form {
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     flex-direction: column;
     align-items: center;
     margin: 0 25%;
@@ -350,11 +358,11 @@ p {
 
 .button-submit {
     background-color: rgb(0, 0, 0);
-    color: rgb(247, 224, 24);
+    color: var(--second-color);
     margin: 0.7em;
     padding: 6px 15px;
     font-size: 1.5em;
 }
 
-*/
+
 
