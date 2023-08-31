@@ -304,6 +304,11 @@ ul.header__main-nav--links li a:active::after {
     text-align: center;
 }
 
+.container-button-reset {
+  display: flex;
+  justify-content: center;
+}
+
 /*
 .header {
     background-color: var(--third-color);

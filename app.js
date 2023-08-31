@@ -1,6 +1,7 @@
 const form = document.querySelector('.quiz-form')
-const finalScore = document.querySelector('.score')
+const finalScore = document.querySelector('.container-score')
 const containerQuiz = document.querySelector('.container-quiz')
+const buttonReset = document.querySelector('.button-reset')
 
 const correctAnswers = ['D', 'B', 'A', 'A', 'B', 'B', 'D', 'C', 'B', 'C']
 
@@ -46,12 +47,13 @@ const animateFinalScore = () => {
         finalScore.querySelector('span').textContent = `${counter++}%`
     },30)
 }
-
+/*
 const makeFinalScoreHide = () => {
     setTimeout(() => {
         finalScore.classList.add('d-none')
     }, 6000)
 }
+/*
 /*
 const setMenuScore = () => {
     setTimeout(() => {
@@ -61,6 +63,11 @@ const setMenuScore = () => {
     }, 7000)
 }
 */
+
+buttonReset.addEventListener('click', () => {
+    finalScore.classList.add('d-none')
+})
+
 form.addEventListener('submit', event => {
     event.preventDefault()
 
