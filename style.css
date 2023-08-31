@@ -312,21 +312,6 @@ ul.header__main-nav--links li a:active::after {
   justify-content: center;
 }
 
-/*
-.header {
-    background-color: var(--third-color);
-    padding: 3em;
-}
-
-.header > h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(247, 224, 24);
-    font-weight: bold;
-    font-size: 2.5em;
-    text-align: center;
-}
-*/
-
 .container-questions {
     display: flex;
     margin: 0 25%;
@@ -336,13 +321,11 @@ ul.header__main-nav--links li a:active::after {
 }
 
 .container .container-quiz {
-    /*position: relative;*/
     align-items: center;
 }
 
 .quiz-form {
     display: flex;
-    /*position: absolute;*/
     flex-direction: column;
     align-items: center;
     margin: 0% 25%;
