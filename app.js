@@ -47,22 +47,6 @@ const animateFinalScore = () => {
         finalScore.querySelector('span').textContent = `${counter++}%`
     },30)
 }
-/*
-const makeFinalScoreHide = () => {
-    setTimeout(() => {
-        finalScore.classList.add('d-none')
-    }, 6000)
-}
-/*
-/*
-const setMenuScore = () => {
-    setTimeout(() => {
-        const spanScore = finalScore.querySelector('.f-score')
-        const message = 'Sua pontuação foi salva no MENU Score. Se preferir refaça o teste.'
-        alert(`Você acertou ${spanScore.textContent} do Quiz JavaScript. ${message}`)
-    }, 7000)
-}
-*/
 
 buttonReset.addEventListener('click', () => {
     finalScore.classList.add('d-none')
@@ -79,8 +63,6 @@ form.addEventListener('submit', event => {
     showFinalScore()
     animateFinalScore()
 
-    //makeFinalScoreHide()
-    //setMenuScore()
 })
 
 
