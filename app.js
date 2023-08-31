@@ -52,7 +52,7 @@ const makeFinalScoreHide = () => {
         finalScore.classList.add('d-none')
     }, 6000)
 }
-
+/*
 const setMenuScore = () => {
     setTimeout(() => {
         const spanScore = finalScore.querySelector('.f-score')
@@ -60,7 +60,7 @@ const setMenuScore = () => {
         alert(`Você acertou ${spanScore.textContent} do Quiz JavaScript. ${message}`)
     }, 7000)
 }
-
+*/
 form.addEventListener('submit', event => {
     event.preventDefault()
 
@@ -72,8 +72,8 @@ form.addEventListener('submit', event => {
     showFinalScore()
     animateFinalScore()
 
-    makeFinalScoreHide()
-    setMenuScore()
+    //makeFinalScoreHide()
+    //setMenuScore()
 })
 
 

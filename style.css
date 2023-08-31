@@ -216,7 +216,7 @@ ul.header__main-nav--links li a:active::after {
       background-color: var(--fifth-color);
       padding: 1rem;
       border-radius: 50%;
-      border: 0.3em solid var(--first-color);
+      border: 0.3rem solid var(--first-color);
       
       display: flex;
       flex-direction: column;
@@ -243,7 +243,7 @@ ul.header__main-nav--links li a:active::after {
     }
 
     .clicked .line-1 {
-      transform: rotateZ(-405deg) translate(-0.8rem, 0.6rem);
+      transform: rotateZ(-405deg) translate(-0.6rem, 0.6rem);
     }
   
     .clicked .line-2 {
@@ -251,7 +251,7 @@ ul.header__main-nav--links li a:active::after {
     }
   
     .clicked .line-3 {
-      transform: rotateZ(405deg) translate(-0.8rem, -0.6rem);
+      transform: rotateZ(405deg) translate(-0.6rem, -0.6rem);
     }
   
     ul.header__main-nav--links li {
