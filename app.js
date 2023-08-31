@@ -1,5 +1,6 @@
 const form = document.querySelector('.quiz-form')
 const finalScore = document.querySelector('.score')
+const containerQuiz = document.querySelector('.container-quiz')
 
 const correctAnswers = ['D', 'B', 'A', 'A', 'B', 'B', 'D', 'C', 'B', 'C']
 
@@ -43,7 +44,21 @@ const animateFinalScore = () => {
         }     
 
         finalScore.querySelector('span').textContent = `${counter++}%`
-    },10)
+    },30)
+}
+
+const makeFinalScoreHide = () => {
+    setTimeout(() => {
+        finalScore.classList.add('d-none')
+    }, 6000)
+}
+
+const setMenuScore = () => {
+    setTimeout(() => {
+        const spanScore = finalScore.querySelector('.f-score')
+        const message = 'Sua pontuação foi salva no MENU Score. Se preferir refaça o teste.'
+        alert(`Você acertou ${spanScore.textContent} do Quiz JavaScript. ${message}`)
+    }, 7000)
 }
 
 form.addEventListener('submit', event => {
@@ -56,6 +71,9 @@ form.addEventListener('submit', event => {
     calculateuserScore(userAnswers)   
     showFinalScore()
     animateFinalScore()
+
+    makeFinalScoreHide()
+    setMenuScore()
 })
 
 

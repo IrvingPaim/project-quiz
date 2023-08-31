@@ -210,13 +210,13 @@ ul.header__main-nav--links li a:active::after {
       width: 5rem;
       height: 5rem;
       position: fixed;
-      top: 2rem;
-      right: 3rem;
+      top: 1rem;
+      right: 2rem;
       cursor: pointer;
       background-color: var(--third-color);
       padding: 1rem;
       border-radius: 50%;
-  
+      
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -286,6 +286,9 @@ ul.header__main-nav--links li a:active::after {
     }
 }    
 
+.container-quiz > h2 {
+  padding-top: 5rem;
+}
 
 .container-score {
     display: flex;
@@ -317,7 +320,7 @@ ul.header__main-nav--links li a:active::after {
 .container-questions {
     display: flex;
     margin: 0 25%;
-    width: 50vw;
+    width: 80vw;
     flex-direction: column;
     justify-content: center;
 }
@@ -364,5 +367,7 @@ p {
     font-size: 1.5em;
 }
 
-
+.d-none {
+  display: none;
+}
 
