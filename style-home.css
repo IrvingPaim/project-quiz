@@ -245,16 +245,27 @@ ul.header__main-nav--links li a:active::after {
     }
 }    
 
+picture#picture-home {
+    display: flex;
+    z-index: 2;
+}
+
+.picture-home__content img {
+    width: 100vh;
+    height: 100vh;
+}
+
 section#section {
     display: flex;
     flex-direction: row;
-    margin: 5em;
-    opacity: 60%;
+    margin: 2em 5em;
+    z-index: -1;
+    /*opacity: 60%;*/
 }
 
 .section__content {
     padding: 2rem;
-    width: 100vh;
+    width: 100vw;
     height: 100%;
     background-color: var(--fifth-color);
     box-shadow: .5em .2em .4em .2em rgba(0, 0, 0, .7);
@@ -263,4 +274,31 @@ section#section {
 
 .section__content h1 {
     display: block;
+    text-align: center;
+    margin-bottom: .3em;
+}
+
+.section__content p {
+    text-align: justify;
+    font-weight: bold;
+}
+
+footer#footer {
+    display: flex;
+    height: calc(3vw + 3vh);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    background-color: var(--third-color);
+    color: white;
+}
+
+.footer__content p {
+    font-size: small;
+    text-align: center;
 }
