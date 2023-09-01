@@ -285,4 +285,5 @@ footer#footer {
     display: flex;
     font-size: (1rem + 0.66667vw);
     text-align: center;
+    padding: .8em;
 }
