@@ -51,7 +51,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.8;
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     background-image: var(--linear);
@@ -60,6 +60,7 @@ body {
 
 /* All content container => main element */
 main {
+    position: relative;
     flex: 1;
 }
 
@@ -136,6 +137,7 @@ ul.header__main-nav--links li a:active::after {
 /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* (max-width:1510px) Mark *-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-*/
 @media screen and (min-width: 1810px) {
     body {
+      display: flex;  
       width: 1510px;
       margin: 0 auto;
     }
@@ -243,15 +245,22 @@ ul.header__main-nav--links li a:active::after {
     }
 }    
 
-.section#section {
-    width: 400px;
-    height: 400px;
-    background-color: var(--third-color);
+section#section {
+    display: flex;
+    flex-direction: row;
+    margin: 5em;
+    opacity: 60%;
 }
-/*
+
 .section__content {
-    width: 80vh;
+    padding: 2rem;
+    width: 100vh;
     height: 100%;
-    background-color: var(--third-color);
+    background-color: var(--fifth-color);
+    box-shadow: .5em .2em .4em .2em rgba(0, 0, 0, .7);
+    border-radius: 1rem;
 }
-/*
+
+.section__content h1 {
+    display: block;
+}
