@@ -149,6 +149,7 @@ ul.header__main-nav--links li a:active::after {
 /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* (max-width:610px) Mark *-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-*/
 @media screen and (max-width: 610px) {
     /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* Main Nav Header *-*-*-*-**-*-*-*-**-*-*-*-**-*/
+
     header#header {
         position: absolute;
     }
@@ -258,7 +259,6 @@ picture#picture-home {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
 }
 
 .picture-home__content img {
@@ -270,13 +270,11 @@ picture#picture-home {
 
 footer#footer {
     display: flex;
-    height: calc(3vw + 3vh);
 }
 
 .footer__content {
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
     width: 100vw;
     background-color: var(--third-color);
@@ -284,6 +282,7 @@ footer#footer {
 }
 
 .footer__content p {
-    font-size: small;
+    display: flex;
+    font-size: (1rem + 0.66667vw);
     text-align: center;
 }
