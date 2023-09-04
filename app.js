@@ -62,7 +62,6 @@ form.addEventListener('submit', event => {
     calculateuserScore(userAnswers)   
     showFinalScore()
     animateFinalScore()
-
 })
 
 
