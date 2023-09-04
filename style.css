@@ -49,12 +49,12 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-image: var(--linear-azul-h);
     background-repeat: no-repeat;
 }
 
 /* All content container => main element */
 main {
+    background-image: var(--linear-azul-h);
     flex: 1;
 }
 
@@ -257,6 +257,10 @@ picture#picture-home {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.img-pos {
+    padding-top: 6em;
 }
 
 footer#footer {
