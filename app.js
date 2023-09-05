@@ -49,7 +49,7 @@ const animateFinalScore = () => {
 }
 
 buttonReset.addEventListener('click', () => {
-    finalScore.classList.add('d-none')
+    finalScore.classList.add('d-none')  
 })
 
 form.addEventListener('submit', event => {
